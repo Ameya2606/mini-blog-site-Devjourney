@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of Minimalist UI | DevJourney</title>
+    <meta name="description"
+        content="Exploring the principles of minimalist UI design: Whitespace, Typography, and Color Theory.">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">DevJourney</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html#articles">Articles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Header -->
+    <header class="bg-white pt-5 mt-5 pb-5">
+        <div class="container pt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <span
+                        class="badge bg-success-subtle text-success mb-3 px-3 py-2 rounded-pill fw-semibold">Design</span>
+                    <h1 class="display-4 fw-bold mb-4">The Art of Minimalist UI</h1>
+                    <div class="d-flex align-items-center text-muted">
+                        <img src="https://ui-avatars.com/api/?name=Ameya+Bhagwat&background=0D8ABC&color=fff"
+                            alt="Ameya Bhagwat" class="rounded-circle me-3" width="48" height="48">
+                        <div>
+                            <p class="mb-0 fw-semibold text-dark">Ameya Bhagwat</p>
+                            <small>Dec 10, 2025 &bull; 6 min read</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <img src="images/post2.png" class="img-fluid rounded-4 shadow-sm mb-5 w-100" alt="Design Workspace">
+
+                <article class="blog-content fs-5 lh-lg font-monospace-secondary">
+                    <p class="lead mb-4 fw-medium text-dark">
+                        I've always wondered why some websites look "clean" and others look "cluttered." Turns out, it's
+                        not magic—it's just a few simple rules about spacing and color that I'm trying to apply in my
+                        own projects.
+                    </p>
+
+                    <h2 class="fw-bold mt-5 mb-3 text-dark">1. The Psychology of Whitespace</h2>
+                    <p>
+                        Whitespace (or negative space) is not empty; it is a design element itself.
+                        Just as silence creates rhythm in music, whitespace creates structure in layout.
+                    </p>
+                    <blockquote
+                        class="border-start border-4 border-success ps-4 py-2 my-4 bg-white shadow-sm rounded-end">
+                        <p class="mb-0 fst-italic text-muted">"Perfection is achieved, not when there is nothing more to
+                            add, but when there is nothing left to take away."</p>
+                        <footer class="blockquote-footer mt-2">Antoine de Saint-Exupéry</footer>
+                    </blockquote>
+                    <p>
+                        When we crowd elements together, the user feels overwhelmed. By using generous padding (like the
+                        <code>py-5</code> classes in this project), we lower the user's stress levels and increase their
+                        focus on the content.
+                    </p>
+
+                    <h2 class="fw-bold mt-5 mb-3 text-dark">2. Visual Hierarchy & Typography</h2>
+                    <p>
+                        Users don't read websites; they scan them. A strong visual hierarchy guides the eye instantly to
+                        what matters.
+                    </p>
+                    <ul class="mb-4">
+                        <li><strong>Scale:</strong> The H1 title should be significantly larger than everything else.
+                        </li>
+                        <li><strong>Contrast:</strong> Pure black on white can be too harsh. We use "Dark Grey"
+                            (<code>#1f2937</code>) for a softer, more premium reading experience.</li>
+                        <li><strong>Typeface:</strong> We chose <em>Inter</em> for this project. It has a tall
+                            "x-height", making it extremely legible even at small sizes on mobile screens.</li>
+                    </ul>
+
+                    <h2 class="fw-bold mt-5 mb-3 text-dark">3. The 60-30-10 Formatting Rule</h2>
+                    <p>
+                        Struggling with colors? This timeless interior design rule works perfectly for Web UI:
+                    </p>
+                    <ul class="list-unstyled bg-white p-4 rounded-3 shadow-sm border">
+                        <li class="mb-2"><span class="d-inline-block rounded-circle me-2"
+                                style="width: 12px; height: 12px; background: #f8f9fa; border: 1px solid #ddd;"></span><strong>60%
+                                Neutral:</strong> The background (Whites, Creams, Light Greys).</li>
+                        <li class="mb-2"><span class="d-inline-block rounded-circle me-2"
+                                style="width: 12px; height: 12px; background: #1f2937;"></span><strong>30%
+                                Secondary:</strong> The typography and borders (Dark Greys, Blacks).</li>
+                        <li><span class="d-inline-block rounded-circle me-2"
+                                style="width: 12px; height: 12px; background: #10b981;"></span><strong>10%
+                                Accent:</strong> The Call-to-Actions (Buttons, Links).</li>
+                    </ul>
+                    <p class="mt-4">
+                        I tried to follow this for my blog layout. Green is my accent color, so I only used it for the
+                        important stuff—like the buttons you click.
+                    </p>
+
+                    <hr class="my-5">
+
+                    <p class="text-muted fst-italic">
+                        Design is an iterative process. As I build more projects, I hope to refine my eye for these
+                        details further.
+                    </p>
+                </article>
+
+                <!-- Navigation Buttons -->
+                <div class="d-flex justify-content-between mt-5">
+                    <a href="index.html" class="btn btn-outline-secondary rounded-pill px-4">&larr; Back to Home</a>
+                    <a href="article-development.html" class="btn btn-outline-primary rounded-pill px-4">Read Dev Post
+                        &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <small>&copy; 2025 DevJourney. Built with Semantic HTML & Bootstrap.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

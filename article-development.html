@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering the Modern Stack | DevJourney</title>
+    <meta name="description"
+        content="A deep dive into the essentials of modern front-end development: Semantic HTML, Advanced CSS, and JavaScript.">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Prism.js for code highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-light">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">DevJourney</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html#articles">Articles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article Header -->
+    <header class="bg-white pt-5 mt-5 pb-5">
+        <div class="container pt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <span
+                        class="badge bg-primary-subtle text-primary mb-3 px-3 py-2 rounded-pill fw-semibold">Development</span>
+                    <h1 class="display-4 fw-bold mb-4">Mastering the Modern Stack</h1>
+                    <div class="d-flex align-items-center text-muted">
+                        <img src="https://ui-avatars.com/api/?name=Ameya+Bhagwat&background=0D8ABC&color=fff"
+                            alt="Ameya Bhagwat" class="rounded-circle me-3" width="48" height="48">
+                        <div>
+                            <p class="mb-0 fw-semibold text-dark">Ameya Bhagwat</p>
+                            <small>Dec 11, 2025 &bull; 8 min read</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <img src="images/post1.png" class="img-fluid rounded-4 shadow-sm mb-5 w-100" alt="Coding Setup">
+
+                <article class="blog-content fs-5 lh-lg font-monospace-secondary">
+                    <p class="lead mb-4 fw-medium text-dark">
+                        I used to think front-end development was just about memorizing tags. But as I dive deeper into
+                        the Meta course, I'm realizing it's so much more. It's about structure, logic, and creativity.
+                    </p>
+                    <p>
+                        Here is what I've learned so far about the three big pillars: Semantic HTML, Modern CSS, and the
+                        "Component" way of thinking.
+                    </p>
+
+                    <h2 class="fw-bold mt-5 mb-3 text-dark">1. Why Semantic HTML Matters</h2>
+                    <p>
+                        New developers often ask: <em>"If a <code>&lt;div&gt;</code> looks like a button, why can't I
+                            just use a <code>&lt;div&gt;</code>?"</em>
+                    </p>
+                    <p>
+                        The answer lies in <strong>Semantics</strong>—the meaning behind the code. When you use the
+                        correct tags, you unlock free functionality:
+                    </p>
+                    <ul class="mb-4">
+                        <li><strong>Accessibility (A11y):</strong> Screen readers for the visually impaired rely on tags
+                            like <code>&lt;nav&gt;</code> and <code>&lt;main&gt;</code> to navigate the page. A
+                            <code>div</code> is invisible to them.</li>
+                        <li><strong>SEO:</strong> Search engines like Google prioritize content inside
+                            <code>&lt;h1&gt;</code> and <code>&lt;article&gt;</code> tags.</li>
+                        <li><strong>Keyboard Navigation:</strong> A <code>&lt;button&gt;</code> is automatically
+                            focusable with the Tab key. A <code>div</code> is not.</li>
+                    </ul>
+
+                    <h2 class="fw-bold mt-5 mb-3 text-dark">2. The CSS Revolution: Flexbox & Grid</h2>
+                    <p>
+                        For years, we struggled with <code>float: left</code> and <code>clearfix</code> hacks. Then came
+                        the layout revolution.
+                    </p>
+
+                    <h3 class="h5 fw-bold text-dark mt-4">Flexbox (One-Dimensional)</h3>
+                    <p>
+                        Flexbox is perfect for aligning items in a single row or column. In this very blog, the Navbar
+                        uses Flexbox to push the links to the right (<code>justify-content-end</code>).
+                    </p>
+
+                    <h3 class="h5 fw-bold text-dark mt-4">CSS Grid (Two-Dimensional)</h3>
+                    <p>
+                        Grid is for the big picture. It allows us to create complex magazine-style layouts. Here is the
+                        code snippet I often use for responsive image galleries:
+                    </p>
+                    <pre><code class="language-css">.gallery {
+    display: grid;
+    /* Auto-fit creates as many columns as will fit */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}</code></pre>
+
+                    <h2 class="fw-bold mt-5 mb-3 text-dark">3. The Component Mindset</h2>
+                    <p>
+                        This was a huge "Aha!" moment for me. Instead of writing the same code over and over, I learned
+                        to think in <strong>components</strong>.
+                    </p>
+                    <div class="alert alert-info border-0 rounded-3 my-4">
+                        <i class="bi bi-lightbulb-fill me-2"></i>
+                        <strong>My Takeaway:</strong> Even though I'm just using HTML and CSS right now, thinking of a
+                        "Card" or a "Button" as a reusable piece makes my code so much cleaner.
+                    </div>
+                    <p>
+                        I'm still practicing this, but it definitely saves time!
+                    </p>
+
+                    <hr class="my-5">
+
+                    <p class="text-muted fst-italic">
+                        This journey is just beginning. As I progress through the Meta Front-End Certificate, I will
+                        continue to document my learnings right here. Thanks for reading.
+                    </p>
+                </article>
+
+                <!-- Navigation Buttons -->
+                <div class="d-flex justify-content-between mt-5">
+                    <a href="index.html" class="btn btn-outline-secondary rounded-pill px-4">&larr; Back to Home</a>
+                    <a href="article-design.html" class="btn btn-primary rounded-pill px-4">Next: Minamalism &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <small>&copy; 2025 DevJourney. Built with Semantic HTML & Bootstrap.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+</body>
+
+</html>
